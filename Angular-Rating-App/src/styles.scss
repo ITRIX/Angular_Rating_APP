@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+  
+$header-color: #f8f9fa;
+
+$font-sizes: ("small": 8px, "medium": 12px, "large": 16px);
+
+@mixin table-header-cls {
+    background: linear-gradient(40deg,#39d01f, $header-color);
+}
+
+@mixin  table-font($size) {
+    font-size: map-get($font-sizes, $size );
+}

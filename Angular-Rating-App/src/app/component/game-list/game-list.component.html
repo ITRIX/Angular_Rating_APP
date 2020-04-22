@@ -1,1 +1,28 @@
-<p>game-list works!</p>
+<div class="game-list-container">
+    <div class="row">
+        <div class="col-md-4 offset-md-8">
+            <button type="button" [ngClass]="{'btn-success': !isStartRating, 'btn-danger': isStartRating }" class="btn btn-success float-right random-rating-btn" (click)="startRandomRating()">
+                {{ !isStartRating ? 'START': 'STOP' }} RANDOM RATING </button>
+        </div>
+    </div>
+    <table class="table table-hover table-bordered">
+        <thead class="tabel-header">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of gameList; let i = index;">
+                <td>{{ i+1 }}</td>
+                <td>{{ item.name }}</td>
+                <td>
+                    <rating [(ngModel)]="item.rating" [max]="max" (click)="updateRating(item.rating, i)"></rating>
+                    <img title="Reset rating" class="resetIcon" src="../../../assets/images/restart-button.png"
+                        alt="reset rating" (click)="updateRating(0, i)">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
