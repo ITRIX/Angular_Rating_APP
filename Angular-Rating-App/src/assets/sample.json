@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "name": "PUBG Mobile",
+        "rating": 5
+    },
+    {
+        "id": "2",
+        "name": "Candy Crush Saga",
+        "rating": 1
+    },
+    {
+        "id": "3",
+        "name": "World of Tanks",
+        "rating": 4
+    },
+    {
+        "id": "4",
+        "name": "Drag Racing",
+        "rating": 3
+    },
+    {
+        "id": "5",
+        "name": "Knives Out",
+        "rating": 2
+    },
+    {
+        "id": "6",
+        "name": "Marvel: Avengers Alliance",
+        "rating": 1
+    },
+    {
+        "id": "7",
+        "name": "Flappy Bird",
+        "rating": 1
+    },
+    {
+        "id": "8",
+        "name": "Fruit Ninja",
+        "rating": 2
+    },
+    {
+        "id": "9",
+        "name": "Mario",
+        "rating": 3
+    },
+    {
+        "id": "10",
+        "name": "Freedom Fighter",
+        "rating": 5
+    }
+]
