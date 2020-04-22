@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+.game-list-container {
+    margin-top: 5rem;
+    .resetIcon {
+        width: 20px;
+        float: right;
+        cursor: pointer;
+    }
+    .tabel-header {
+        @include table-header-cls;
+    }
+    table {
+        // You can pass small , medium, large
+        @include table-font(large);
+    }
+}
